@@ -1,0 +1,1 @@
+A different approach to how to do django site.
