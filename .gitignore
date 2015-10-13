@@ -61,4 +61,5 @@ target/
 
 # database
 *.sqlite3
+no_share.py
 
