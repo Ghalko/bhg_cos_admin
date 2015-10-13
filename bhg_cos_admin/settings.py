@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+
+# import mongoengine
+
 from no_share import SECRET_KEY as SECRET_KEY_MAIN
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -84,6 +87,21 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     },
 }
+
+# SESSION_ENGINE = 'mongoengine.django.sessions'
+#
+# _MONGODB_USER = ''
+# _MONGODB_PASSWD = ''
+# _MONGODB_HOST = ''
+# _MONGODB_NAME = 'db'
+# _MONGODB_DATABASE_HOST = 'mongodb://{user}:{password}@{host}/{name}'.format(
+#     user=_MONGODB_USER,
+#     password=_MONGODB_PASSWD,
+#     host=_MONGODB_HOST,
+#     name=_MONGODB_NAME
+# )
+#
+# mongoengine.connect(_MONGODB_NAME, host=_MONGODB_DATABASE_HOST)
 
 
 # Internationalization
